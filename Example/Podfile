@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MintGridView_Example' do
+  pod 'MintGridView', :path => '../'
+
+  target 'MintGridView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
