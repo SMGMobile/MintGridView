@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'MintGridView_Example' do
   pod 'MintGridView', :path => '../'
+  pod 'SwiftyJSON'
 
   target 'MintGridView_Tests' do
     inherit! :search_paths

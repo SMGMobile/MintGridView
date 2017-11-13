@@ -22,21 +22,18 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/jihq/MintGridView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jihq' => '1026499974@qq.com' }
   s.source           = { :git => 'https://github.com/jihq/MintGridView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MintGridView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MintGridView' => ['MintGridView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.resource_bundles = {
+    'MintGridViewImages' => ['MintGridView/Assets/*.png']
+  }
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Kingfisher', '~> 4.2'
+  s.dependency 'SwiftyJSON'
 end

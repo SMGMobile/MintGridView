@@ -14,6 +14,11 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C28CCBBB1FB57A9E0067061E /* 001.geojson in Resources */ = {isa = PBXBuildFile; fileRef = C28CCBBA1FB57A9E0067061E /* 001.geojson */; };
+		C28CCBBD1FB57E460067061E /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28CCBBC1FB57E460067061E /* NormalViewController.swift */; };
+		C2A2DD701FB930DF0008BB8C /* HotCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A2DD6F1FB930DF0008BB8C /* HotCountViewController.swift */; };
+		C2A2DD721FB973700008BB8C /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A2DD711FB973700008BB8C /* UpdateViewController.swift */; };
+		C2A2DD741FB9745A0008BB8C /* 001_2.geojson in Resources */ = {isa = PBXBuildFile; fileRef = C2A2DD731FB9745A0008BB8C /* 001_2.geojson */; };
 		CC109FA4F7825C98901A9678 /* Pods_MintGridView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027930DD839F3FAA7158FEF5 /* Pods_MintGridView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +47,16 @@
 		607FACE51AFB9204008FA782 /* MintGridView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintGridView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6CDB7D2771239B5CB9E329F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6CDB7D2771239B5CB9E329F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		76F06C776F9938A2A08E88CE /* Pods_MintGridView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MintGridView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B8627EED723DEE21934AC4E /* MintGridView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MintGridView.podspec; path = ../MintGridView.podspec; sourceTree = "<group>"; };
-		B59D3C23D65C1A7A48C8CEFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9B8627EED723DEE21934AC4E /* MintGridView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MintGridView.podspec; path = ../MintGridView.podspec; sourceTree = "<group>"; };
+		B59D3C23D65C1A7A48C8CEFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0D6B41F4F5693F89DC09455 /* Pods-MintGridView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MintGridView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MintGridView_Tests/Pods-MintGridView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C28CCBBA1FB57A9E0067061E /* 001.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 001.geojson; sourceTree = "<group>"; };
+		C28CCBBC1FB57E460067061E /* NormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
+		C2A2DD6F1FB930DF0008BB8C /* HotCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HotCountViewController.swift; path = MintGridView/HotCountViewController.swift; sourceTree = "<group>"; };
+		C2A2DD711FB973700008BB8C /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UpdateViewController.swift; path = MintGridView/UpdateViewController.swift; sourceTree = "<group>"; };
+		C2A2DD731FB9745A0008BB8C /* 001_2.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 001_2.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +103,15 @@
 		607FACD21AFB9204008FA782 /* Example for MintGridView */ = {
 			isa = PBXGroup;
 			children = (
+				C28CCBBA1FB57A9E0067061E /* 001.geojson */,
+				C2A2DD731FB9745A0008BB8C /* 001_2.geojson */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				C28CCBBC1FB57E460067061E /* NormalViewController.swift */,
 			);
 			name = "Example for MintGridView";
 			path = MintGridView;
@@ -135,6 +148,8 @@
 				9B8627EED723DEE21934AC4E /* MintGridView.podspec */,
 				B59D3C23D65C1A7A48C8CEFC /* README.md */,
 				6CDB7D2771239B5CB9E329F3 /* LICENSE */,
+				C2A2DD6F1FB930DF0008BB8C /* HotCountViewController.swift */,
+				C2A2DD711FB973700008BB8C /* UpdateViewController.swift */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -215,10 +230,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = LKP82WSHEH;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = LKP82WSHEH;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -251,6 +268,8 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				C28CCBBB1FB57A9E0067061E /* 001.geojson in Resources */,
+				C2A2DD741FB9745A0008BB8C /* 001_2.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,11 +353,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MintGridView_Example/Pods-MintGridView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MintGridView/MintGridView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MintGridView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -371,7 +394,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				C28CCBBD1FB57E460067061E /* NormalViewController.swift in Sources */,
+				C2A2DD701FB930DF0008BB8C /* HotCountViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				C2A2DD721FB973700008BB8C /* UpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +543,7 @@
 			baseConfigurationReference = 055104C10231C8DC69F6F712 /* Pods-MintGridView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LKP82WSHEH;
 				INFOPLIST_FILE = MintGridView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -532,6 +559,7 @@
 			baseConfigurationReference = 268DA4F8138B097EFB6D2FD2 /* Pods-MintGridView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LKP82WSHEH;
 				INFOPLIST_FILE = MintGridView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -546,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F4DFA7507CBA558D426F9F3 /* Pods-MintGridView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LKP82WSHEH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -567,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0D6B41F4F5693F89DC09455 /* Pods-MintGridView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LKP82WSHEH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
