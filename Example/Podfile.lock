@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
-  MintGridView: 1dbe5ccd3474c6b49e8d1e5030f7a443fb1f5e31
+  MintGridView: da4e19dc5dd9c8af7feebce7eb2a6b98c80d86cc
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
 PODFILE CHECKSUM: 30d01cbcf4e7b47c410388a63d36ff15259d5b90
