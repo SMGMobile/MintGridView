@@ -5,7 +5,7 @@
 //  Created by 季风 on 2017/11/7.
 //
 
-import Foundation
+import UIKit
 
 public protocol MintGridViewLayoutProtocol {
     
