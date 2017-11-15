@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MintGridView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MintGridView.'
+  s.summary          = '快捷的表格组件，可支持九宫格和列表形式.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/jihq/MintGridView'
+  s.homepage         = 'https://github.com/ServyouMobile/MintGridView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jihq' => '1026499974@qq.com' }
-  s.source           = { :git => 'https://github.com/jihq/MintGridView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ServyouMobile/MintGridView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
