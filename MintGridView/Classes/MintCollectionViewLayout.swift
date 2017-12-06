@@ -27,8 +27,11 @@ public class MintCollectionViewFlowLayout: UICollectionViewFlowLayout {
     /// 显示时cell是否需要整行填充，默认YES
     public var fullRowPadding = true
     
+    /// 项目间的最大间距
     open var maximumInteritemSpacing: CGFloat = 1
+    /// 项目大小的适配方式
     public var sizeAdaptType = SizeAdaptType.proportion
+    /// 图片的大小
     public var imageSize = CGSize()
     
     override init() {

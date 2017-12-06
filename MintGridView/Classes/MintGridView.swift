@@ -42,30 +42,40 @@ public extension MintGridViewDelegate {
 }
 
 public class MintGridView: UIView {
+    /// 表格id
     public var dataID = ""
+    /// 表格唯一id，保存数据使用
     public var uniqueID = ""
     
+    /// 内容显示方式
     public var contentShowType: ContentShowType = .scroll {
         didSet {
             setNeedsLayout()
         }
     }
+    /// 布局类型
     public var layoutType: LayoutType {
         return .square
     }
+    /// 布局对象
     public var layout: MintGridViewLayout? {
         didSet {
             reload()
         }
     }
+    /// 单元格背景色
     public var cellBackgroundColor = UIColor.white
+    /// 单元格字体颜色
     public var cellFontColor = UIColor.init(white: 51.0/256.0, alpha: 1.0)
+    /// 单元格选中颜色
     public var cellSelectedColor = UIColor.init(white: 248.0/256.0, alpha: 1.0)
+    /// 项目数组
     public var items: [JSON] = [] {
         didSet {
             reload()
         }
     }
+    /// 代理对象
     public var delegate: MintGridViewDelegate?
     
     //MARK: -
@@ -116,19 +126,30 @@ public class MintGridView: UIView {
     
     //MARK: -
     //MARK: public method
+    
+    /// 重新加载
     public func reload() {
         
     }
+    /// 注册单元格重用标识
+    ///
+    /// - Parameters:
+    ///   - identifier: 标识符
+    ///   - withClass: 类名
     public func registeIdentifier(_ identifier: String, withClass: AnyClass) {
         
     }
     
+    /// 更新表格数据
+    ///
+    /// - Parameter data: 表格字典类型数据
     public func updateWithData(_ data: Dictionary<String, Any>) {
         let view: MintGridView = self
         if let jsonData = JSON.init(data).dictionary {
             let layoutType = view.layoutType
             if layoutType == .table {
             } else {
+                /// 更新当前的layout对象
                 if let layout = view.layout as? MintCollectionViewLayout {
                     let num = jsonData.numberInRow
                     if num > 0 {

@@ -8,27 +8,27 @@
 import UIKit
 
 public class MintTableViewBaseCell: UITableViewCell {
-    var item: [String: Any]? {
+    public var item: [String: Any]? {
         didSet{
             setNeedsLayout()
         }
     }
-    var showWay = HotCountShowWay.dot {
+    public var showWay = HotCountShowWay.dot {
         didSet{
             setNeedsLayout()
         }
     }
-    var hotCount = 0 {
+    public var hotCount = 0 {
         didSet{
             setNeedsLayout()
         }
     }
-    var hotCountView: UIView? {
+    public var hotCountView: UIView? {
         didSet{
             setNeedsLayout()
         }
     }
-    var showLine = true {
+    public var showLine = true {
         didSet{
             setNeedsLayout()
         }

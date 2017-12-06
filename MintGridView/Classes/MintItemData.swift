@@ -10,17 +10,17 @@ import SwiftyJSON
 
 //MARK: -
 //MARK: data的值
-extension Dictionary {
-    var dataID: String {
+public extension Dictionary {
+    public var dataID: String {
         return mintData(.dataID)?.string ?? ""
     }
-    var uniqueID: String {
+    public var uniqueID: String {
         return mintData(.uniqueID)?.string ?? ""
     }
-    var layoutType: LayoutType {
+    public var layoutType: LayoutType {
         return (mintData(.layoutType)?.string ?? "").elementsEqual("1") ? .table : .square
     }
-    var numberInRow: Int {
+    public var numberInRow: Int {
         let num = mintData(.numberInRow)?.string ?? ""
         if let n = Int(num) {
             return n
@@ -28,16 +28,16 @@ extension Dictionary {
             return 0
         }
     }
-    var items: Array<JSON> {
+    public var items: Array<JSON> {
         let data = mintData(.items)
         
         return convertToJSON(data: data)?.array ?? []
     }
-    func mintData(_ key: MintDataKey) -> JSON? {
+    public func mintData(_ key: MintDataKey) -> JSON? {
         let privateDict = self as! Dictionary<String, JSON>
         return privateDict[key.rawValue]
     }
-    func convertToJSON(data: JSON?) -> JSON? {
+    public func convertToJSON(data: JSON?) -> JSON? {
         if data?.type == .null || data?.type == .unknown {
             return nil
         } else if data?.type == .string {
@@ -50,33 +50,33 @@ extension Dictionary {
 
 //MARK: -
 //MARK: - item的值
-extension Dictionary {
+public extension Dictionary {
     public var itemID: String {
         return mintItemString(.itemID)
     }
-    var itemName: String {
+    public var itemName: String {
         return mintItemString(.itemName)
     }
-    var imageURL: String {
+    public var imageURL: String {
         return mintItemString(.imageURL)
     }
-    var order: String {
+    public var order: String {
         return mintItemString(.order)
     }
-    var path: String {
+    public var path: String {
         return mintItemString(.path)
     }
-    var secondPageData: Dictionary<String, JSON>? {
+    public var secondPageData: Dictionary<String, JSON>? {
         return convertToJSON(data: mintItem(.secondPageData))?.dictionary
     }
-    var extraInfo: Dictionary<String, JSON>? {
+    public var extraInfo: Dictionary<String, JSON>? {
         return convertToJSON(data: mintItem(.extraInfo))?.dictionary
     }
-    func mintItem(_ key: ItemKey) -> JSON? {
+    public func mintItem(_ key: ItemKey) -> JSON? {
         let privateDict = self as! Dictionary<String, JSON>
         return privateDict[key.rawValue]
     }
-    func mintItemString(_ key: ItemKey) -> String {
+    public func mintItemString(_ key: ItemKey) -> String {
         return mintItem(key)?.string ?? ""
     }
 }

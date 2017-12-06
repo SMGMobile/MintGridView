@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MintDataKey: String {
+public enum MintDataKey: String {
     case dataID = "dataID"
     case uniqueID = "uniqueID"
     case layoutType = "layoutType"
@@ -15,7 +15,7 @@ enum MintDataKey: String {
     case items = "items"
 }
 
-enum ItemKey: String {
+public enum ItemKey: String {
     case itemID = "itemID"
     case itemName = "itemName"
     case imageURL = "imageURL"
