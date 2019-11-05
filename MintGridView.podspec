@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/ServyouMobile/MintGridView'
+  s.homepage         = 'https://github.com/SMGMobile/MintGridView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jihq' => '1026499974@qq.com' }
-  s.source           = { :git => 'https://github.com/ServyouMobile/MintGridView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SMGMobile/MintGridView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
